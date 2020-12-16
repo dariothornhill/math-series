@@ -20,6 +20,4 @@ def sum_series(n: int, a = 0, b = 1 ) -> int:
         return a
     if n == 1:
         return b
-    result = sum_series(n-1, a, b) + sum_series(n-2, a, b)
-    print(result)
-    return result
+    return sum_series(n-1, a, b) + sum_series(n-2, a, b)
